@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otpverification"
+    android:background="@drawable/gradback">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/otpver"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="VERIFY OTP"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/enterotp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/otpver"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/roundedwhiteborder"
+        android:gravity="center"
+        android:hint="ENTER OTP"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#B3F3F0F0"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/otpverify"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/enterotp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="65dp"
+        android:background="@drawable/loginbtnback"
+        android:text="VERIFY OTP"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp" />
+
+</RelativeLayout>

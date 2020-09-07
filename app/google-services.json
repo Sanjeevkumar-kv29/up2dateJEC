@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "871461866974",
+    "firebase_url": "https://pathshala-1945d.firebaseio.com",
+    "project_id": "pathshala-1945d",
+    "storage_bucket": "pathshala-1945d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871461866974:android:290badaf1fe8f0bc70e14f",
+        "android_client_info": {
+          "package_name": "com.example.pathshala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871461866974-3j3ns4pq0u8iaevmbcce3c56limtkue2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pathshala",
+            "certificate_hash": "a7c64878c564419a07e5238ebdf215a883abab84"
+          }
+        },
+        {
+          "client_id": "871461866974-a1e7l7lpefm2nabdkiang09fqprm1kuk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo0HSBMuEF8vMOAVYJq43oHy135nSl2kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871461866974-a1e7l7lpefm2nabdkiang09fqprm1kuk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
