@@ -1,4 +1,4 @@
-package com.example.pathshala.AutoMail;
+package com.up2dateJEC.AutoMail;
 
 import java.security.Security;
 import java.util.Properties;

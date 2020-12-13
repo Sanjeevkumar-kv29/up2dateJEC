@@ -1,17 +1,13 @@
-package com.example.pathshala
+package com.example.up2dateJEC
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_email_auth.*
-
-
 
 
 class EmailAuth : AppCompatActivity() {
@@ -47,6 +43,7 @@ class EmailAuth : AppCompatActivity() {
 
 
         button2log.setOnClickListener {
+            finish()
             startActivity(Intent(this,Login_Activity::class.java))
             overridePendingTransition(R.anim.leftin,R.anim.rightout)
         }
@@ -56,7 +53,9 @@ class EmailAuth : AppCompatActivity() {
 
     override fun onBackPressed() {
 
-       // Toast.makeText(this,"Back press Restricted",Toast.LENGTH_LONG).show()
+        finish()
+        startActivity(Intent(this,Login_Activity::class.java))
+        overridePendingTransition(R.anim.leftin,R.anim.rightout)
     }
 
     fun emailauth()

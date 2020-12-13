@@ -35,18 +35,19 @@
             android:layout_marginStart="10dp"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
 
-                android:id="@+id/navusername"
+                android:id="@+id/navusernameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/nav_header_vertical_spacing"
                 android:textStyle="bold"
                 android:text="@string/nav_header_title"
+                android:textSize="20dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-            <TextView
-                android:id="@+id/navuseremail"
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/navuseremailTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"

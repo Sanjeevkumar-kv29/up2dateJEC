@@ -1,9 +1,7 @@
-package com.example.pathshala
+package com.example.up2dateJEC
 
-import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.tasks.OnCompleteListener
@@ -14,7 +12,6 @@ import com.google.firebase.auth.PhoneAuthProvider.ForceResendingToken
 import com.google.firebase.auth.PhoneAuthProvider.OnVerificationStateChangedCallbacks
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_otpverification.*
-import kotlinx.android.synthetic.main.activity_regester.*
 import java.util.concurrent.TimeUnit
 
 
@@ -32,7 +29,7 @@ class Otpverification : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.example.pathshala.R.layout.activity_otpverification)
+        setContentView(com.example.up2dateJEC.R.layout.activity_otpverification)
 
 
         val intent = intent

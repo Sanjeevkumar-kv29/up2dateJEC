@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pathshala">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.up2dateJEC">
 
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,7 +13,29 @@
         android:roundIcon="@drawable/pathshalarounded"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForgetPass"></activity>
+        <activity android:name="com.up2dateJEC.StudentNotify"></activity>
+        <activity android:name="com.up2dateJEC.ScrapJec" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.up2dateJEC.Notification.FirebaseService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.up2dateJEC.SubCategoryDetails" />
+        <activity android:name="com.up2dateJEC.Category_Detail" />
+        <activity
+            android:name="com.up2dateJEC.Fragment.HomeFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.up2dateJEC.Account_Setting" />
+        <activity android:name=".ForgetPass" />
         <activity android:name=".MainActivity" />
         <activity android:name=".EmailAuth" />
         <activity android:name=".Otpregester" />

@@ -1,13 +1,13 @@
-package com.example.pathshala
+package com.example.up2dateJEC
 
 import android.app.ProgressDialog
 import android.content.Intent
-import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
@@ -22,7 +22,7 @@ class Login_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
+        FirebaseApp.initializeApp(this)
         firebaseAuth = FirebaseAuth.getInstance()
 
         progressDialog = ProgressDialog(this)
@@ -36,17 +36,38 @@ class Login_Activity : AppCompatActivity() {
 
         }
 
+
         loginbttn?.setOnClickListener(View.OnClickListener {
-            validate(
-                loginid?.getText().toString(),
-                loginpass?.getText().toString()
-            )
+
+            val regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$".toRegex()
+
+            if (loginid.text.toString().isEmpty()){
+                loginid.setError("Enter Login ID")
+            }
+            else if (loginpass.text.toString().isEmpty()){
+                loginpass.setError("Enter The Password")
+            }
+            else if (loginid.text.toString().matches(regex)){
+                validate(
+                    loginid?.getText().toString(),
+                    loginpass?.getText().toString()
+                )
+
+
+            }
+            else{
+                loginid.setError("enter valid email")
+            }
+
+
+
         })
 
 
         /*
 
         val sharepref:SharedPreferences = getSharedPreferences("uidpass",0)
+
         loginid.setText(sharepref.getString("user",""))
         loginpass.setText(sharepref.getString("pass",""))
 

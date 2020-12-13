@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradback">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userprofiletxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="ACCOUNT SETTING"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/upll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userprofiletxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/roundedwhite">
+
+
+        <LinearLayout
+            android:id="@+id/viewprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedwhite"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="View Profile" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/viewachievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/roundedwhite">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/certificate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="View Achievement" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/changepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/roundedwhite">
+
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/changepassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Change Passowrd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deleteaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/roundedwhite">
+
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/deleteaccount" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Delete Account" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/upll2"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@id/upll1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/roundedwhite">
+
+
+
+        <TextView
+            android:id="@+id/actiontv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Selected Action" />
+
+        <LinearLayout
+            android:id="@+id/actionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/actiontv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/roundedwhite">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewprofilelayout"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actiontv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+
+            android:background="@drawable/roundedwhite">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernamemtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernamemtv"
+                android:hint="Your Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/useremailmtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/useremailmtv"
+                android:hint="Your Mobile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usermobilemtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usermobilemtv"
+                android:hint="Your Date Of Birth (dd-mm-yyyy)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userdobmtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userdobmtv"
+                android:hint="Your College name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usercollegenamemtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usercollegenamemtv"
+                android:hint="Your Address">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/useraddressmtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/useraddressmtv"
+                android:hint="Your LinkedIn Profile Link">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/linkedinprofilelink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+
+                    android:id="@+id/viewachievementlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/actiontv"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/roundedwhite">
+
+                    <ListView
+
+                        android:id="@+id/achievementListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="381dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/changepasswordlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/actiontv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="20dp"
+                android:background="@drawable/roundedwhite">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter New Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/changepasswordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Re - Enter New Password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmchangepasswordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/deleteuseraccountlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/actiontv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="20dp"
+                android:background="@drawable/roundedwhite">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ENTER YOUR MAIL ID TO CONFIRM">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/useremailidtodelete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/deleteaccountCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARE YOUR SURE YOU WANT TO DELETE YOUR ACCOUNT" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ASbutton1"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/upll2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/roundedwhite"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="BUTTON 1" />
+
+    <Button
+        android:id="@+id/ASbutton2"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/ASbutton1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/roundedwhite"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="BUTTON 2" />
+
+
+
+
+</RelativeLayout>

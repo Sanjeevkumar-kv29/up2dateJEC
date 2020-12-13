@@ -43,6 +43,7 @@
             android:background="@drawable/roundedredborder"
             android:gravity="center"
             android:hint="ENTER EMAIL-ID"
+            android:inputType="textNoSuggestions"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHint="#80980303"
             android:textSize="20dp" />

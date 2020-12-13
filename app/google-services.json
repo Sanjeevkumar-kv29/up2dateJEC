@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "871461866974",
-    "firebase_url": "https://pathshala-1945d.firebaseio.com",
-    "project_id": "pathshala-1945d",
-    "storage_bucket": "pathshala-1945d.appspot.com"
+    "project_number": "501078659463",
+    "firebase_url": "https://uptodatejec.firebaseio.com",
+    "project_id": "uptodatejec",
+    "storage_bucket": "uptodatejec.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:871461866974:android:290badaf1fe8f0bc70e14f",
+        "mobilesdk_app_id": "1:501078659463:android:aea6c5aef2082e0234c322",
         "android_client_info": {
-          "package_name": "com.example.pathshala"
+          "package_name": "com.example.up2dateJEC"
         }
       },
       "oauth_client": [
         {
-          "client_id": "871461866974-3j3ns4pq0u8iaevmbcce3c56limtkue2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.pathshala",
-            "certificate_hash": "a7c64878c564419a07e5238ebdf215a883abab84"
-          }
-        },
-        {
-          "client_id": "871461866974-a1e7l7lpefm2nabdkiang09fqprm1kuk.apps.googleusercontent.com",
+          "client_id": "501078659463-76npk706t1fmkbie3osrr6ncl4l1h09o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDo0HSBMuEF8vMOAVYJq43oHy135nSl2kU"
+          "current_key": "AIzaSyAUgZUwCm_iWsiFBVCaOIIiL4PRG0xN-T8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "871461866974-a1e7l7lpefm2nabdkiang09fqprm1kuk.apps.googleusercontent.com",
+              "client_id": "501078659463-76npk706t1fmkbie3osrr6ncl4l1h09o.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,4 +1,4 @@
-package com.example.pathshala.AutoMail;
+package com.up2dateJEC.AutoMail;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

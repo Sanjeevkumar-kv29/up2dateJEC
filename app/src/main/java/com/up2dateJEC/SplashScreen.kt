@@ -1,9 +1,9 @@
-package com.example.pathshala
+package com.example.up2dateJEC
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,9 +14,9 @@ class SplashScreen : AppCompatActivity() {
 
             Handler().postDelayed(
                 {
-
                     startActivity(Intent(this,Login_Activity::class.java))
                     overridePendingTransition(R.anim.leftout,R.anim.rightin)
+                    finish()
 
                 },3000 )
         }
